@@ -1,0 +1,73 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+#about, #experience, #projects, #contact, app-skills {
+  padding: 20px;
+  position: relative;
+  margin: 20px 0;
+}
+
+#about, #experience, #projects, #contact, app-skills {
+  width: 100%;
+  max-width: 1200px;
+  max-height: fit-content;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 20px;
+}
+
+app-header, app-about, app-experience, app-projects, app-skills, app-contact {
+  display: block;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+  #about, #experience, #projects, #contact, app-skills {
+    max-width: 1000px;
+    max-height: fit-content;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about, #experience, #projects, #contact, app-skills {
+    max-width: 800px;
+    max-height: fit-content;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about, #experience, #projects, #contact, app-skills {
+    max-width: 600px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #about, #experience, #projects, #contact, app-skills {
+    max-width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+  }
+}
+
+/* Additional Styles */
+body {
+  background-color: #f4f4f9;
+}
+
+#about, #experience, #projects, #contact, app-skills {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  #about, #experience, #projects, #contact, app-skills {
+    margin-bottom: 10px;
+  }
+}

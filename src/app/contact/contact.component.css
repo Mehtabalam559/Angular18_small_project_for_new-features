@@ -1,0 +1,138 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+.header {
+  margin-top: 50px;
+  padding-top: 50px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.header h2 {
+  font-size: 2em;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #576574;
+  display: inline-block;
+}
+
+#contact-heading {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.row {
+  margin-top: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card1, .card2, .card3, .card4 {
+  background-color: #c2b6b6;
+  background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.card1 a, .card2 a, .card3 a, .card4 a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 svg, .card2 svg, .card3 svg, .card4 svg {
+  width: 30px;
+  height: 30px;
+}
+
+#container-contact {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color:  #576574;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color:#c2b6b6;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    padding: 10px;
+  }
+
+  #container-contact {
+    max-width: 100%;
+  }
+}
